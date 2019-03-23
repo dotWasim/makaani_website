@@ -1,0 +1,1312 @@
+/*
+Author       : Zwebtheme.
+Template Name: zApp - Responsive App Landing Page
+Version      : 1.0
+*/
+
+
+/*=============================================================
+CSS INDEX
+ ==============================================================
+    01. GENERAL STYLE (body, link color, section-title, preloader btn, overlay, section-padding etc)
+    02. BOOTSTRAP NAVIGATION OVERRIDES
+    03. START HOME DESIGN
+    04. START OVERVIEW DESIGN
+    05. START HOW IT WORKS DESIGN
+    06. START AMAZING FEATURES DESIGN
+    07. START APP SCREENSHOT DESIGN
+    08. START VIDEO DESIGN
+    09. START TESTIMONIAL DESIGN
+    10. START OUR TEAM DESIGN
+    11. START PRICE DESIGN
+    12. START FAQ DESIGN
+    13. START BLOG POST DESIGN
+    14. START DOWNLOAD APP DESIGN
+    15. START NEWSLETTER DESIGN
+    16. START CONTACT DESIGN
+    17. START FOOTER DESIGN
+  =============================================================*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GENERAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+body {
+    color: #777;
+    background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #666;
+}
+
+a:hover {
+    color: #666;
+}
+
+.preloader {
+    background: #fff;
+}
+
+.status-mes {
+    border-top: 5px solid rgba(0, 0, 0, 0.08);
+    border-right: 5px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #60aaae;
+}
+
+.topcontrol {
+    border: 2px solid #fff;
+    color: #fff;
+    background: #60aaae;
+    
+}
+
+.topcontrol:hover {
+    color: #60aaae;
+    background: #eee;
+    
+}
+
+.line {
+    border-bottom: 1px dashed #666;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.END GENERAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 02. START BOOTSTRAP NAVIGATION OVERRIDES
+* ----------------------------------------------------------------------------------------
+*/
+
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #fff !important;
+    background-color: transparent;
+}
+
+.navbar-default.menu-shrink .navbar-nav>.active>a,
+.navbar-default.menu-shrink .navbar-nav>.active>a:hover,
+.navbar-default.menu-shrink .navbar-nav>.active>a:focus {
+    color: #60aaae !important;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    color: #171717 !important;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #fff
+}
+
+.menu-top li a {
+    color: #fff !important;
+}
+
+.menu-top li a:hover {
+    color: #fff!important;
+}
+
+@media only screen and (max-width:480px) {
+    .menu-top {
+        background: rgba(17, 63, 100, 1);
+        background: -moz-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+        background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(17, 63, 100, 1)), color-stop(100%, rgba(1, 235, 184, 0.4)));
+        background: -webkit-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+        background: -o-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+        background: -ms-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+        background: linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    }
+    .navbar-default .navbar-nav > li > a {
+        color: #fff !important
+    }
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border-color: transparent;
+        box-shadow: none;
+    }
+}
+
+.navbar-default.menu-shrink {
+    background: #fff;
+}
+
+@media only screen and (max-width:480px) {
+    .menu-top {
+        color: #fff !important;
+    }
+}
+
+.navbar-default.menu-shrink li a {
+    color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.navbar-default.menu-shrink li a:hover {
+    color: #666 !important
+}
+
+.navbar-default .navbar-toggle {
+    background: transparent none repeat scroll 0 0;
+    border: none;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background: transparent none repeat scroll 0 0;
+    border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.menu-shrink .navbar-toggle .icon-bar {
+    background-color: #60aaae;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 02.END BOOTSTRAP NAVIGATION OVERRIDES
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 03.START HOME DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+.menu-shrink {
+    border-bottom: 5px solid #eee;
+}
+
+.home_bg {
+    background-image: url(../assets/img/bg/home-bg-4.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.home_bg:before {
+    background: rgba(17, 63, 100, 1);
+    background: -moz-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(17, 63, 100, 1)), color-stop(100%, rgba(1, 235, 184, 0.4)));
+    background: -webkit-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: -o-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: -ms-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+}
+
+.hero-text h2 {
+    color: #fff;
+}
+
+.hero-text p {
+    color: #fff;
+}
+
+.home_btn a,
+.slider_btn a {
+    background: transparent none repeat scroll 0 0;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.home_btn a:hover,
+.slider_btn a:hover {
+    background: #fff;
+    color: #60aaae;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 03.END HOME DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+ * ----------------------------------------------------------------------------------------
+ * 04.START OVERVIEW DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+
+.single_about {
+    background: #fff none repeat scroll 0 0;
+}
+
+.single_about:hover {
+    box-shadow: 0px 60px 60px rgba(0, 0, 0, 0.1);
+}
+
+.single_about:hover i {
+    border: 1px solid #60aaae;
+    color: #fff;
+    background: #60aaae;
+   
+}
+
+.single_about i {
+    border: 1px solid #60aaae;
+    color: #60aaae;
+}
+
+
+/*
+ * ----------------------------------------------------------------------------------------
+ * 04.END OVERVIEW DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+
+
+/*
+ * ----------------------------------------------------------------------------------------
+ * 05.START HOW IT WORKS DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+
+.sec-steps {
+   
+    background: rgba(17, 63, 100, 1);
+    background: -moz-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(17, 63, 100, 1)), color-stop(100%, rgba(1, 235, 184, 0.4)));
+    background: -webkit-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: -o-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: -ms-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+}
+
+.sec-steps .section-title h2 {
+    color: #fff;
+}
+
+.sec-steps .section-title .line {
+    border-bottom: 1px dashed #fff;
+}
+
+.sec-steps .section-title p {
+    color: #fff;
+}
+
+.sec-steps .row.row-2 [class^="col-"] .step-desc span {
+    border: 1px solid #fff;
+    color: #60aaae;
+    background: #fff none repeat scroll 0 0;
+}
+
+.sec-steps .row.row-2 [class^="col-"] .step-desc h4,
+.sec-steps .row.row-2 [class^="col-"] .step-desc p {
+    color: #fff;
+}
+
+
+/*
+ * ----------------------------------------------------------------------------------------
+ * 05.END HOW IT WORKS DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 06.START AMAZING FEATURES DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+.amazing_feature .section-title h2 {
+   
+}
+
+.single-feature h4 {
+    color: #60aaae;
+}
+
+.single-feature i {
+    border: 0px solid #60aaae;
+    color: #fff;
+   
+    background: rgba(17, 63, 100, 1);
+    background: -moz-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(17, 63, 100, 1)), color-stop(100%, rgba(1, 235, 184, 0.4)));
+    background: -webkit-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: -o-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: -ms-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+}
+
+.single-feature:hover i {
+    border: 0px solid #60aaae;
+    color: #fff;
+    background: #60aaae;
+    
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 06.END AMAZING FEATURES DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 07.START APP SCREENSHOT DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+.app-screenshot {
+    background: #f8f8f8;
+}
+
+.screen_wrap .swiper-pagination-bullets .swiper-pagination-bullet {
+    background: #60aaae;
+    
+}
+
+.screen_wrap .swiper-pagination-bullets .swiper-pagination-bullet-active {
+    background-color: #60aaae;
+}
+
+.swiper-button-prev i,
+.swiper-button-next i {
+    font-size: 80px;
+    color: #60aaae;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 07.END APP SCREENSHOT DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 08.START VIDEO DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+.about_video {
+    background: rgba(17, 63, 100, 1);
+    background: -moz-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(17, 63, 100, 1)), color-stop(100%, rgba(1, 235, 184, 0.4)));
+    background: -webkit-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: -o-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: -ms-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+}
+.about_video:before {
+    background:transparent;
+}
+
+.video-container h3 {
+    color: #fff;
+}
+
+.play-video {
+   
+    background: rgba(17, 63, 100, 1);
+    background: -moz-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(17, 63, 100, 1)), color-stop(100%, rgba(1, 235, 184, 0.4)));
+    background: -webkit-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: -o-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: -ms-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+}
+
+.video-container a:hover .play-video {
+    color: #fff;
+    background: #60aaae;
+    
+}
+
+.video-container a:hover .fa-play {
+    color: #fff;
+}
+
+.play-video .fa-play {
+    color: #fff;
+}
+
+.modal-content {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+
+.about_video .bg-img {
+    background-image: url(../assets/img/bg/video-bg.jpg);
+    background-attachment: fixed;
+    background-position: center 100%;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 08.END VIDEO DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 09.START TESTIMONIAL DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+.testimonial .section-title h2 {
+    
+}
+
+.testimonial-slider .owl-controls .owl-dots .owl-dot {
+    background: #60aaae;
+   
+}
+
+.testimonial-slider .owl-dots .owl-dot.active,
+.owl-theme .owl-controls .owl-page span {
+    background: #60aaae;
+    
+}
+
+.owl-theme .owl-controls .owl-page span {
+    background-color: #60aaae !important;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+    background-color: #fff
+}
+
+blockquote p:before {
+    background-image: url(../assets/img/testimonial/blockquote-left.png);
+}
+
+blockquote p:after {
+    background-image: url(../assets/img/testimonial/blockquote-right.png);
+}
+
+blockquote footer:before {
+    background-image: url(../assets/img/testimonial/blockquote-footer.png);
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 09.END TESTIMONIAL DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 10. START OUR TEAM DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+.sec-team {
+    
+    background: rgba(17, 63, 100, 1);
+    background: -moz-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(17, 63, 100, 1)), color-stop(100%, rgba(1, 235, 184, 0.4)));
+    background: -webkit-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: -o-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: -ms-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+}
+
+.sec-team .section-title h2 {
+    color: #fff;
+}
+
+.sec-team .section-title .line {
+    border-bottom: 1px dashed #fff;
+}
+
+.sec-team .section-title p {
+    color: #fff;
+}
+
+.sec-team .bg-img {
+    background-image: url(../assets/img/bg/team-bg.jpg);
+    background-attachment: fixed;
+}
+
+.sec-team .wrapper {
+    background-color: white;
+    color: #666666;
+}
+
+.sec-team .wrapper:hover {
+    -webkit-box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.5);
+}
+
+.sec-team .wrapper h5 {
+    color: #606060;
+}
+
+.sec-team .wrapper a i {
+    border: 1px solid #ddd;
+    color: #666;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.sec-team .wrapper a i:hover {
+    border: 1px solid #60aaae;
+    color: #fff;
+   
+    background: #60aaae;
+   
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 10. END OUR TEAM DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 11.START PRICING DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+.single-pricing {
+    background: #fff none repeat scroll 0 0;
+}
+
+.single-pricing-block {
+    border: 0px solid #60aaae;
+    background:#60aaae;
+   
+}
+
+.single-pricing:hover {
+    -webkit-box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.5);
+}
+
+.block-caption small {
+    color: #666;
+}
+
+.block-caption-white small {
+    color: #fff;
+}
+
+.single-pricing ul li {
+    border-bottom: 1px solid #eee;
+}
+
+.single-pricing-block h4 {
+    color: #fff;
+}
+
+.single-pricing-block h1 {
+    color: #fff;
+    font-weight: bold;
+}
+
+.block-caption {
+    color: #60aaae;
+    font-weight: bold;
+}
+
+.single-pricing-block ul li {
+    color: #666;
+    border-bottom: 1px solid rgba(17, 63, 100, 1);
+}
+
+.single-pricing-block ul li {
+    border-bottom: 0px solid  rgba(17, 63, 100, 1);
+    color: #fff;
+}
+
+.btn-pricing-bg {
+    background: #fff none repeat scroll 0 0;
+    border: 2px solid #ddd;
+    color: #666;
+}
+
+.btn-pricing-bg:hover,
+.btn-pricing-bg:focus {
+    background: #eee;
+    color: #666;
+    border: 2px solid #fff;
+}
+
+button.btn-pricing-bg {
+    line-height: 10px;
+}
+
+.btn-pricing-bg-block {
+    background: transparent;
+    color: #fff;
+}
+
+.btn-pricing-bg-block:hover,
+.btn-pricing-bg-block:focus {
+    background: #fff;
+    color: #666;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 11.END PRICING DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 12. START FAQ DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+.sec-faq {
+    
+    background: rgba(17, 63, 100, 1);
+    background: -moz-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(17, 63, 100, 1)), color-stop(100%, rgba(1, 235, 184, 0.4)));
+    background: -webkit-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: -o-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: -ms-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+}
+
+.sec-faq .section-title h2 {
+    color: #fff;
+}
+
+.sec-faq .section-title .line {
+    border-bottom: 1px dashed #fff;
+}
+
+.sec-faq .section-title p {
+    color: #fff;
+}
+
+.sec-faq .row .faq-inner .panel-group .panel {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.sec-faq .row .faq-inner .panel-group .panel .panel-heading {
+    background-color: transparent;
+    color: #fff;
+}
+
+.sec-faq .row .faq-inner .panel-group .panel .panel-heading .panel-title .btn-accordion::after {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.sec-faq .row .faq-inner .panel-group .panel .panel-heading .panel-title .btn-accordion.collapsed::after {
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+
+.sec-faq .row .faq-inner .panel-group .panel .panel-collapse .panel-body::before {
+    border-left: 1px dashed #fff;
+}
+
+.sec-faq .row .faq-inner .panel-group .panel .panel-collapse .panel-body {
+    color: #fff;
+}
+
+.sec-faq a:hover {
+    color: #fff;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 12. END FAQ DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 13. START BLOG POST DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+.sec-blog .thumbnail-blog,
+.sec-blog-list .thumbnail-blog {
+    background-color: #f9f9f9;
+}
+
+.sec-blog .thumbnail-blog:hover,
+.sec-blog-list .thumbnail-blog:hover {
+    -webkit-box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sec-blog .thumbnail-blog.active,
+.sec-blog-list .thumbnail-blog.active {
+    -webkit-box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sec-blog .thumbnail-blog .thumbnail-img::after,
+.sec-blog-list .thumbnail-blog .thumbnail-img::after {
+    background-color: #f9f9f9;
+}
+
+.sec-blog .thumbnail-blog a > h5,
+.sec-blog-list .thumbnail-blog a > h5 {
+    color: #60aaae;
+}
+
+.sec-blog .thumbnail-blog h6,
+.sec-blog-list .thumbnail-blog h6 {
+    color: #bebebe;
+}
+
+.sec-blog .thumbnail-blog p,
+.sec-blog-list .thumbnail-blog p {
+    color: #666666;
+}
+
+.sec-blog .thumbnail-blog p + a,
+.sec-blog-list .thumbnail-blog p + a {
+    color: #666;
+}
+
+.sec-blog .thumbnail-blog  a:hover,
+.sec-blog-list .thumbnail-blog a:hover {
+    color: #60aaae;
+}
+
+.sec-blog .home_btn a {
+    background: transparent none repeat scroll 0 0;
+    border: 2px solid #60aaae;
+    color: #60aaae;
+}
+
+.sec-blog .home_btn a:hover {
+    color: #fff;
+    background: #60aaae;
+    border: 2px solid #60aaae;
+}
+
+
+/*--------------------------------
+Blog List
+----------------------------------*/
+
+.sec-blog-list .pagination a {
+    border: 1px solid #60aaae;
+    color: #60aaae;
+    background-color: white;
+}
+
+.sec-blog-list .pagination a:hover,
+.sec-blog-list .pagination a.active {
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+}
+
+.sec-blog-list .pagination a::after {
+    background: #60aaae;
+}
+
+.sec-blog-list.solid .pagination a::after {
+    background-image: none;
+    background-color: #60aaae;
+}
+
+
+/*--------------------------------
+Blog Post
+----------------------------------*/
+
+.sec-blog-post .blog-post .blog-post-header .blog-title {
+    color: #303030;
+}
+
+.sec-blog-post .blog-post .blog-post-header .meta {
+    color: #bebebe;
+}
+
+.sec-blog-post .blog-post .blog-post-body {
+    color: #666666;
+}
+
+.sec-blog-post .blog-post .blog-post-body blockquote {
+    background-color: #f9f9f9;
+    border-left: 2px solid #60aaae;
+    color: #60aaae;
+}
+
+.sec-blog-post .blog-share {
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    vertical-align: middle;
+}
+
+.sec-blog-post .blog-share span {
+    color: #303030;
+}
+
+.sec-blog-post .blog-share .fa {
+    color: white;
+}
+
+.sec-blog-post .blog-share .fa:hover {
+    opacity: 0.8;
+}
+
+.sec-blog-post .blog-share .fa.fa-facebook {
+    background-color: #3b5998;
+}
+
+.sec-blog-post .blog-share .fa.fa-pinterest-p {
+    background-color: #bd081c;
+}
+
+.sec-blog-post .blog-share .fa.fa-twitter {
+    background-color: #1da1f2;
+}
+
+.sec-blog-post .blog-share .fa.fa-linkedin {
+    background-color: #0077b5;
+}
+
+.sec-blog-post .blog-share .fa.fa-dribbble {
+    background-color: #ea4c89;
+}
+
+.sec-blog-post .blog-share a {
+    color: #8c8c8c;
+}
+
+.sec-blog-post .blog-comment h4 {
+    color: #303030;
+}
+
+.sec-blog-post .blog-comment .comment .comment-box {
+    border: 1px solid #ebebeb;
+}
+
+.sec-blog-post .blog-comment .comment .comment-box .media-body .comment-name {
+    color: #606060;
+}
+
+.sec-blog-post .blog-comment .comment .comment-box .media-body .comment-time {
+    color: #a1a1a1;
+}
+
+.sec-blog-post .blog-comment .comment .comment-box .media-body .comment-time::before {
+    background-color: #e1e1e1;
+}
+
+.sec-blog-post .blog-comment .comment .comment-box .media-body .comment-text {
+    color: #666666;
+}
+
+.sec-blog-post .blog-comment .comment .comment-box .media-body .comment-btn-reply {
+    color: #b4b4b4;
+}
+
+.sec-blog-post .blog-submit h4 {
+    color: #303030;
+}
+
+.sec-blog-post .blog-submit form .form-group input,
+.sec-blog-post .blog-submit form .form-group textarea {
+    border: 1px solid #e1e1e1;
+}
+
+.sec-blog-post .blog-submit form button {
+    background: none;
+    border: 2px solid #eee;
+    color: #666;
+    transition: all 0.25s ease 0s;
+}
+
+.sec-blog-post .blog-submit form button:hover {
+    border: 2px solid #60aaae;
+    background: #60aaae;
+    
+    color: #fff;
+}
+
+.sec-blog-post.solid .blog-post .blog-post-body blockquote {
+    border-left-color: #60aaae;
+    color: #60aaae;
+}
+
+.sec-blog-post.solid .blog-submit form button {
+    background-image: none;
+    background-color: #60aaae;
+}
+
+
+/* -------------------------------------------------- */
+
+
+/*	Widgets
+	/* -------------------------------------------------- */
+
+#sidebar .widget_categories ul li,
+#sidebar .widget_archive ul li,
+#sidebar .widget_links ul li,
+#sidebar .widget_meta ul li,
+#sidebar .widget_pages ul li,
+#sidebar .widget_recent_entries ul li {
+    border-color: #eee;
+}
+
+#sidebar .widget_categories ul li a,
+#sidebar .widget_archive ul li a {
+    font-size: 100%;
+    color: #60aaae;
+}
+
+
+/* ---------------------------------------- */
+
+
+/*	Recent Posts
+    /* ---------------------------------------- */
+
+#sidebar .entry-meta span.date a {
+    color: #60aaae;
+}
+
+#sidebar .entry-meta span {
+    color: #666;
+}
+
+#sidebar .entry-title {
+    color: #60aaae;
+}
+
+#sidebar .entry-title a {
+    color: #60aaae;
+}
+
+#sidebar .widget_recent_posts .entry {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+
+/* ---------------------------------------- */
+
+
+/*	Tags Cloud
+    /* ---------------------------------------- */
+
+#sidebar .widget_tag_cloud .tagcloud {
+    font-size: 0;
+}
+
+#sidebar .widget_tag_cloud .tagcloud a {
+    background: #60aaae;
+    color: #fff;
+}
+
+#sidebar .widget_tag_cloud .tagcloud a:hover {
+    color: #60aaae;
+    background: #eee;
+    
+}
+
+
+/* ---------------------------------------- */
+
+
+/*	Search
+    /* ---------------------------------------- */
+
+#searchform .submit-search {
+    background: #60aaae;
+    color: #fff;
+}
+
+#searchform .submit-search:hover {
+    background: #60aaae;
+    
+}
+
+
+/*--------------------------------
+End Blog Post
+----------------------------------*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 13. END BLOG POST DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 14.START DOWNLOAD DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+.download {
+    
+    background: rgba(17, 63, 100, 1);
+    background: -moz-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(17, 63, 100, 1)), color-stop(100%, rgba(1, 235, 184, 0.4)));
+    background: -webkit-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: -o-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: -ms-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+}
+
+.sec-download .section-title h2 {
+    color: #fff;
+}
+
+.sec-download .section-title .line {
+    border-bottom: 1px dashed #fff;
+}
+
+.sec-download .section-title p {
+    color: #fff;
+}
+
+.sec-download .bg-img {
+    background-image: url(../assets/img/bg/download-bg.jpg);
+    background-attachment: fixed;
+    background-position: center 100%;
+}
+
+.download_icon h2 {
+    color: #666;
+}
+
+.download_icon span {
+    border-bottom: 1px dashed #666;
+}
+
+.download_icon p {
+    color: #666;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 14.END DOWNLOAD DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 15.START NEWSLETTER DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+.signup_form input {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #e8e8e9;
+    color: #333;
+}
+
+.signup_form input:hover,
+.signup_form input:focus {
+    border: 1px solid #e8e8e9;
+}
+
+.signup_form button {
+    color: #fff;
+    background: #60aaae;
+   
+}
+
+.signup_form .btn-pricing-bg {
+    border: 0px solid #60aaae;
+}
+
+.signup_form button:hover,
+.signup_form button:focus {
+    background: #eee;
+    color: #666;
+    border: 0px solid #ddd;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 15.END NEWSLETTER DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+ * ----------------------------------------------------------------------------------------
+ * 16.START CONTACT DESIGN
+ * ----------------------------------------------------------------------------------------
+*/
+
+.contact_area {
+   
+    background: rgba(17, 63, 100, 1);
+    background: -moz-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(17, 63, 100, 1)), color-stop(100%, rgba(1, 235, 184, 0.4)));
+    background: -webkit-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: -o-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: -ms-linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+    background: linear-gradient(45deg, rgba(17, 63, 100, 1) 0%, rgba(1, 235, 184, 0.4) 100%);
+}
+
+.contact_area .bg-img {
+    background-image: url(../assets/img/bg/contact-bg.png);
+    background-attachment: fixed;
+}
+
+.contact_area .section-title h2 {
+    color: #fff;
+}
+
+.contact_area .section-title .line {
+    border-bottom: 1px dashed #fff;
+}
+
+.contact_area .section-title p {
+    color: #fff;
+}
+
+.contact {
+    background: #fff none repeat scroll 0 0;
+}
+
+.support-item .circle span {
+    background: #eee none repeat scroll 0 0;
+    border: 0px solid #60aaae;
+    color: #60aaae;
+}
+
+.support-item_info,
+.support-item_name {
+    color: #fff;
+}
+
+.support-item_info a {
+    color: #fff;
+}
+
+.support-desc {
+    color: #fff;
+}
+
+input.lineField {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+textarea.lineField {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.support-form .btn-pricing-bg {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.support-form .btn-pricing-bg:hover {
+    background: #fff;
+    color: #666;
+    border: 2px solid #fff;
+}
+
+p.help-block {color: yellow;}
+
+/*
+ * ----------------------------------------------------------------------------------------
+ * 16.END CONTACT DESIGN
+ * ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 17.START FOOTER DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+.footer {
+    
+}
+
+.footer .social li {
+    padding: 0 2px;
+}
+
+.footer .social a {
+    background: #fff;
+    color: #60aaae;
+    border: 1px solid #fff;
+}
+
+.footer .social a:hover {
+    color: #666;
+}
+
+.copyright p {
+    color: #fff;
+}
+
+.footer_menu ul li a {
+    color: #666;
+}
+
+.footer_menu ul li a:hover {
+    color: #666;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 17.END FOOTER DESIGN
+* ----------------------------------------------------------------------------------------
+*/
