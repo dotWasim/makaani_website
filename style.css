@@ -294,8 +294,11 @@ img {
 }
 
 .navbar-brand img {
-    max-height: : 88%;
+    max-height: 60px;
     margin-left: 10px;
+}
+.social i.fa {
+    line-height: 2
 }
 
 .navbar-default .navbar-collapse,
@@ -491,7 +494,7 @@ img {
 
 .hero-text h2 {
     color: #fff;
-    font-size: 56px;
+    font-size: 51px;
     font-weight: 700;
     letter-spacing: 0;
     line-height: 64px;
